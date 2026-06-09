@@ -6,38 +6,37 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     navigate("/home");
   };
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="login-container">
+      <h1 className="login-title">Login</h1>
 
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form
+        className="login-form"
+        onSubmit={handleSubmit}
+      >
+        <div className="login-group">
           <label>Username</label>
-          <br />
           <input
             type="text"
             placeholder="Enter username"
           />
         </div>
 
-        <br />
-
-        <div>
+        <div className="login-group">
           <label>Email</label>
-          <br />
           <input
             type="email"
             placeholder="Enter email"
           />
         </div>
 
-        <br />
-
-        <button type="submit">
+        <button
+          className="login-btn"
+          type="submit"
+        >
           Login
         </button>
       </form>
