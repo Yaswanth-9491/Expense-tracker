@@ -1,35 +1,42 @@
-import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate("/home");
+  };
+
   return (
-    <div className="login-container">
-      <h1 className="login-title">
-        Login
-      </h1>
+    <div>
+      <h1>Login</h1>
 
-      <form>
-        <div className="login-group">
+      <form onSubmit={handleSubmit}>
+        <div>
           <label>Username</label>
-
+          <br />
           <input
             type="text"
             placeholder="Enter username"
           />
         </div>
 
-        <div className="login-group">
-          <label>Email</label>
+        <br />
 
+        <div>
+          <label>Email</label>
+          <br />
           <input
             type="email"
             placeholder="Enter email"
           />
         </div>
 
-        <button
-          className="login-btn"
-          type="submit"
-        >
+        <br />
+
+        <button type="submit">
           Login
         </button>
       </form>

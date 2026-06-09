@@ -32,17 +32,17 @@ function App() {
       <Routes>
         <Route
           path="/"
+          element={<Login />}
+        />
+
+        <Route
+          path="/home"
           element={
             <Home
               expenses={expenses}
               setExpenses={setExpenses}
             />
           }
-        />
-
-        <Route
-          path="/login"
-          element={<Login />}
         />
 
         <Route
