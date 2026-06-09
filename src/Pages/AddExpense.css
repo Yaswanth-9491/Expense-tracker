@@ -1,5 +1,5 @@
 .add-expense-container {
-  width: 600px;
+  width: 650px;
   max-width: 90%;
 
   margin: 50px auto;
@@ -9,8 +9,7 @@
 
   border-radius: 16px;
 
-  box-shadow: 0 10px 25px
-    rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .add-expense-container h1 {
@@ -22,21 +21,4 @@
   font-weight: 700;
 
   margin-bottom: 30px;
-
-  position: relative;
-}
-
-.add-expense-container h1::after {
-  content: "";
-
-  display: block;
-
-  width: 100px;
-  height: 4px;
-
-  background: #2563eb;
-
-  margin: 12px auto 0;
-
-  border-radius: 10px;
 }
