@@ -1,0 +1,17 @@
+.add-expense-container {
+  width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  font-size: 32px;
+  font-weight: 700;
+}
+
